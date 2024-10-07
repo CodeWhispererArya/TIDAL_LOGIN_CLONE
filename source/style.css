@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(52deg, rgba(0, 0, 0, 1) 0%, rgba(16, 20, 27, 1) 52%, rgba(23, 29, 38, 1) 100%);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling inside the body */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+/** Logo Modification **/
+
+.logo {
+    width: 150px; /* Adjust this value to increase or decrease the logo size */
+    margin-top: 50px;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+/* Sub Heading Modifications */
+
+.sub-heading {
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+/** Card Placements **/
+
+.outerbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2026;
+    width: 400px;
+    border-radius: 8px;
+    min-height: 550px; /* Adjust the minimum height */
+    margin-bottom: 20px; /* Add margin to create space for the footer */
+    
+}
+
+.box {
+    padding: 50px;
+    color: white;
+    padding-top: 40px;
+}
+
+/** Button Modifications code **/ 
+
+.buttonbox {
+    text-align: center;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.button:hover{
+    background-color: #4e525a;
+}
+.loginbuttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.continue-button{
+    background-color:#77797d ;
+    color:rgb(15, 15, 15)
+}
+.continue-button:hover{
+    background-color:#77797d;
+    cursor: pointer;
+}
+
+/** Modifications for email input **/ 
+
+#emailBox{
+    text-decoration: none;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+.input-container {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    padding-bottom: 20px;
+    
+}
+
+input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus ~ .underline {
+    background-color: yellow;
+}
+
+/** Footer **/ 
+footer {
+    background-color: transparent;
+    color: #ccc;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    width: 97%; /* Full width of the viewport */
+    margin-top: 20px; /* Adds space before the footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width */
+    padding: 0 20px;
+    box-sizing: border-box; /* Ensures padding is inside the width */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add some space between links and the button */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-language .language-btn {
+    background-color: #222;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-language .language-btn:hover {
+    background-color: #333;
+    border-color: #555;
+}
+
+/** Made the footer mobile responsive **/
+
+@media(max-width:450px){
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Full width */
+        padding: 0 20px;
+        gap: 10px;
+        box-sizing: border-box; /* Ensures padding is inside the width */
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Add some space between links and the button */
+    }
+
+}
